@@ -59,7 +59,7 @@ public class CommentaireController {
 
             log.info ("com {}", commentaire);
 
-            return new ResponseEntity<> (this.commentaireService.saveRecord (commentaire), HttpStatus.CREATED);
+            return new ResponseEntity<> (this.commentaireService.save (commentaire), HttpStatus.CREATED);
         }catch (Exception e){
             return new ResponseEntity<> (null, HttpStatus.EXPECTATION_FAILED);
         }

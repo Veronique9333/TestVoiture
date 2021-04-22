@@ -37,11 +37,11 @@ public class VoitureController {
     }
 
     //save voiture
-    @PostMapping(value = "save", consumes = {"multipart/form-data" })
+    @PostMapping(value = "save")
     @CrossOrigin(origins = "*")
     public ResponseEntity<Voiture> createVoiture(@RequestBody Voiture voiture){
         log.info ("voiture {}", voiture);
-        Voiture newVoiture = this.voitureService.saveRecord (voiture);
+        Voiture newVoiture = this.voitureService.save (voiture);
         return ResponseEntity.ok (newVoiture);
     }
 

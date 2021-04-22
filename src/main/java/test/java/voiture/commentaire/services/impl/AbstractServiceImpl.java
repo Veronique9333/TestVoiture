@@ -15,7 +15,7 @@ public abstract class AbstractServiceImpl<E extends CommonAttributeEntity<ID>, I
     public abstract RP repository();
 
     @Override
-    public E saveRecord(E entity){
+    public E save(E entity){
         if (entity.getId () == null || entity.getId ().toString ().isEmpty ()) {
             entity.setId ((ID) GeneratorUtils.uuid ());
         }

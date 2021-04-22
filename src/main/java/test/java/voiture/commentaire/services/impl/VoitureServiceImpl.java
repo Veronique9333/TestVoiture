@@ -61,7 +61,7 @@ public class VoitureServiceImpl extends AbstractServiceImpl<Voiture, String, Voi
         voiture.setMarque (MarqueEnum.RENAUL);
         voiture.setPuissance (125);
         voiture.setVitesse (45.0);
-        Voiture voiture1 = this.saveRecord (voiture);
+        Voiture voiture1 = this.save (voiture);
 
         Commentaire commentaire = new Commentaire ();
         commentaire.setDescription ("Premiers commentaire");
@@ -69,7 +69,7 @@ public class VoitureServiceImpl extends AbstractServiceImpl<Voiture, String, Voi
         if (!utilisateurService.checkExistUser ())
             commentaire.setUtilisateur (utilisateurService.initUser ());
         commentaire.setUtilisateur (utilisateurRepository.findAll ().get (0));
-        commentaireService.saveRecord (commentaire);
+        commentaireService.save (commentaire);
     }
 
 }

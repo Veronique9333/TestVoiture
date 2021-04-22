@@ -6,5 +6,5 @@ import java.io.Serializable;
 
 public interface CommonService<E extends CommonAttributeEntity<ID>, ID extends Serializable>{
 
-    E saveRecord(E entity);
+    E save(E entity);
 }
