@@ -32,20 +32,6 @@ public class CommentaireApplication implements CommandLineRunner {
         SpringApplication.run (CommentaireApplication.class, args);
     }
 
-    /*@Bean
-    public FilterRegistrationBean filterRegistration(){
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowCredentials(true);
-        configuration.setAllowedOrigins(Collections.singletonList("*"));
-        configuration.setAllowedMethods(Collections.singletonList("*"));
-        configuration.setAllowedHeaders(Collections.singletonList("*"));
-        source.registerCorsConfiguration("/**",configuration);
-        FilterRegistrationBean bean = new FilterRegistrationBean<>(new CorsFilter (source));
-        bean.setOrder(Ordered.HIGHEST_PRECEDENCE);
-        return bean;
-    }*/
-
     @Override
     public void run(String... args) {
         if (!utilisateurService.checkExistUser()){

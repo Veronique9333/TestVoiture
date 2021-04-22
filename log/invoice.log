@@ -5876,3 +5876,306 @@ org.springframework.security.web.firewall.RequestRejectedException: The request 
 2021-04-22 14:03:00.599  WARN 20756 --- [http-nio-8989-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
 2021-04-22 14:03:00.816  WARN 20756 --- [http-nio-8989-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [210] milliseconds.
 2021-04-22 14:03:05.534  WARN 20756 --- [http-nio-8989-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=--------------------------977992766907365556514810;charset=UTF-8' not supported]
+2021-04-22 14:20:09.423  INFO 25584 --- [restartedMain] t.j.v.c.CommentaireApplication           : Starting CommentaireApplication using Java 11.0.2 on DESKTOP-CTDRE1E with PID 25584 (D:\_Projets\PROJETS\TestVoiture\target\classes started by Vero in D:\_Projets\PROJETS\TestVoiture)
+2021-04-22 14:20:09.428  INFO 25584 --- [restartedMain] t.j.v.c.CommentaireApplication           : No active profile set, falling back to default profiles: default
+2021-04-22 14:20:09.566  INFO 25584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-22 14:20:09.567  INFO 25584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-22 14:20:11.514  INFO 25584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-22 14:20:11.668  INFO 25584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 4 JPA repository interfaces.
+2021-04-22 14:20:12.300  INFO 25584 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@10fbf166' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-22 14:20:12.321  INFO 25584 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-22 14:20:12.964  INFO 25584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2021-04-22 14:20:12.980  INFO 25584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-22 14:20:12.981  INFO 25584 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-22 14:20:13.207  INFO 25584 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-22 14:20:13.208  INFO 25584 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3639 ms
+2021-04-22 14:20:13.644  INFO 25584 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-22 14:20:13.745  INFO 25584 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-22 14:20:13.974  INFO 25584 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-22 14:20:14.142  INFO 25584 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-04-22 14:20:15.019  INFO 25584 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-22 14:20:15.199  INFO 25584 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-22 14:20:15.404  INFO 25584 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-22 14:20:15.417  INFO 25584 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-22 14:20:15.473  INFO 25584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-22 14:20:16.250  WARN 25584 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-22 14:20:16.462  INFO 25584 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/voiture/list-voiture'] with []
+2021-04-22 14:20:16.462  INFO 25584 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/commentaire/**'] with []
+2021-04-22 14:20:16.543  INFO 25584 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65206cc9, org.springframework.security.web.context.SecurityContextPersistenceFilter@5871ebff, org.springframework.security.web.header.HeaderWriterFilter@7db4a6c0, org.springframework.security.web.csrf.CsrfFilter@6c4170b7, org.springframework.security.web.authentication.logout.LogoutFilter@8caffdd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5e42aa09, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72fe8870, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c85c2d2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a794d90, org.springframework.security.web.session.SessionManagementFilter@3316744, org.springframework.security.web.access.ExceptionTranslationFilter@11683b3e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@547de48c]
+2021-04-22 14:20:16.762  INFO 25584 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-22 14:20:17.198  INFO 25584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2021-04-22 14:20:17.218  INFO 25584 --- [restartedMain] t.j.v.c.CommentaireApplication           : Started CommentaireApplication in 8.969 seconds (JVM running for 12.837)
+2021-04-22 14:20:17.308 DEBUG 25584 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        utilisateu0_.id as id1_2_,
+        utilisateu0_.password as password2_2_,
+        utilisateu0_.role as role4_2_,
+        utilisateu0_.username as username3_2_ 
+    from
+        utilisateur utilisateu0_
+2021-04-22 14:20:17.318 TRACE 25584 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_2_] : [BIGINT]) - [10]
+2021-04-22 14:20:17.325 TRACE 25584 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password2_2_] : [VARCHAR]) - [V1234!]
+2021-04-22 14:20:17.325 TRACE 25584 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role4_2_] : [BIGINT]) - [9]
+2021-04-22 14:20:17.326 TRACE 25584 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([username3_2_] : [VARCHAR]) - [rasoanantenainav@gmail.com]
+2021-04-22 14:20:17.361 DEBUG 25584 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        voiture0_.id as id1_3_,
+        voiture0_.date_update as date_upd2_3_,
+        voiture0_.deleted as deleted3_3_,
+        voiture0_.marque as marque4_3_,
+        voiture0_.matricule as matricul5_3_,
+        voiture0_.puissance as puissanc6_3_,
+        voiture0_.vitesse as vitesse7_3_ 
+    from
+        voiture voiture0_
+2021-04-22 14:20:17.363 TRACE 25584 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_3_] : [VARCHAR]) - [c46eb940-c70f-4077-8b50-8038c00efbd4]
+2021-04-22 14:20:17.370 TRACE 25584 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_upd2_3_] : [DATE]) - [2021-04-22]
+2021-04-22 14:20:17.372 TRACE 25584 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([deleted3_3_] : [BOOLEAN]) - [false]
+2021-04-22 14:20:17.372 TRACE 25584 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([marque4_3_] : [VARCHAR]) - [RENAUL]
+2021-04-22 14:20:17.372 TRACE 25584 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([matricul5_3_] : [VARCHAR]) - [1515TAB]
+2021-04-22 14:20:17.373 TRACE 25584 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([puissanc6_3_] : [INTEGER]) - [125]
+2021-04-22 14:20:17.374 TRACE 25584 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vitesse7_3_] : [DOUBLE]) - [45.0]
+2021-04-22 14:20:29.403  INFO 25584 --- [http-nio-8989-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-22 14:20:29.405  INFO 25584 --- [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-22 14:20:29.406  INFO 25584 --- [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-22 14:20:29.431 DEBUG 25584 --- [http-nio-8989-exec-1] org.hibernate.SQL                        : 
+    select
+        voiture0_.id as id1_3_,
+        voiture0_.date_update as date_upd2_3_,
+        voiture0_.deleted as deleted3_3_,
+        voiture0_.marque as marque4_3_,
+        voiture0_.matricule as matricul5_3_,
+        voiture0_.puissance as puissanc6_3_,
+        voiture0_.vitesse as vitesse7_3_ 
+    from
+        voiture voiture0_
+2021-04-22 14:20:29.432 TRACE 25584 --- [http-nio-8989-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_3_] : [VARCHAR]) - [c46eb940-c70f-4077-8b50-8038c00efbd4]
+2021-04-22 14:20:29.433 TRACE 25584 --- [http-nio-8989-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_upd2_3_] : [DATE]) - [2021-04-22]
+2021-04-22 14:20:29.434 TRACE 25584 --- [http-nio-8989-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([deleted3_3_] : [BOOLEAN]) - [false]
+2021-04-22 14:20:29.434 TRACE 25584 --- [http-nio-8989-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([marque4_3_] : [VARCHAR]) - [RENAUL]
+2021-04-22 14:20:29.434 TRACE 25584 --- [http-nio-8989-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([matricul5_3_] : [VARCHAR]) - [1515TAB]
+2021-04-22 14:20:29.434 TRACE 25584 --- [http-nio-8989-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([puissanc6_3_] : [INTEGER]) - [125]
+2021-04-22 14:20:29.434 TRACE 25584 --- [http-nio-8989-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vitesse7_3_] : [DOUBLE]) - [45.0]
+2021-04-22 14:20:38.203  WARN 25584 --- [http-nio-8989-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [295] milliseconds.
+2021-04-22 14:20:44.150 DEBUG 25584 --- [http-nio-8989-exec-4] org.hibernate.SQL                        : 
+    select
+        voiture0_.id as id1_3_,
+        voiture0_.date_update as date_upd2_3_,
+        voiture0_.deleted as deleted3_3_,
+        voiture0_.marque as marque4_3_,
+        voiture0_.matricule as matricul5_3_,
+        voiture0_.puissance as puissanc6_3_,
+        voiture0_.vitesse as vitesse7_3_ 
+    from
+        voiture voiture0_
+2021-04-22 14:20:44.151 TRACE 25584 --- [http-nio-8989-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_3_] : [VARCHAR]) - [c46eb940-c70f-4077-8b50-8038c00efbd4]
+2021-04-22 14:20:44.152 TRACE 25584 --- [http-nio-8989-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_upd2_3_] : [DATE]) - [2021-04-22]
+2021-04-22 14:20:44.152 TRACE 25584 --- [http-nio-8989-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([deleted3_3_] : [BOOLEAN]) - [false]
+2021-04-22 14:20:44.152 TRACE 25584 --- [http-nio-8989-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([marque4_3_] : [VARCHAR]) - [RENAUL]
+2021-04-22 14:20:44.152 TRACE 25584 --- [http-nio-8989-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([matricul5_3_] : [VARCHAR]) - [1515TAB]
+2021-04-22 14:20:44.152 TRACE 25584 --- [http-nio-8989-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([puissanc6_3_] : [INTEGER]) - [125]
+2021-04-22 14:20:44.153 TRACE 25584 --- [http-nio-8989-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vitesse7_3_] : [DOUBLE]) - [45.0]
+2021-04-22 14:21:36.576 DEBUG 25584 --- [http-nio-8989-exec-5] org.hibernate.SQL                        : 
+    select
+        commentair0_.id as id1_0_,
+        commentair0_.date_update as date_upd2_0_,
+        commentair0_.deleted as deleted3_0_,
+        commentair0_.description as descript4_0_,
+        commentair0_.id_utilisateur as id_utili5_0_,
+        commentair0_.id_voiture as id_voitu6_0_ 
+    from
+        commentaire commentair0_
+2021-04-22 14:21:36.577 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [VARCHAR]) - [bb41e332-7d86-450a-a7ab-590fceab3094]
+2021-04-22 14:21:36.578 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_upd2_0_] : [DATE]) - [2021-04-22]
+2021-04-22 14:21:36.578 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([deleted3_0_] : [BOOLEAN]) - [false]
+2021-04-22 14:21:36.578 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript4_0_] : [VARCHAR]) - [Premiers commentaire]
+2021-04-22 14:21:36.578 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id_utili5_0_] : [BIGINT]) - [10]
+2021-04-22 14:21:36.578 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id_voitu6_0_] : [VARCHAR]) - [c46eb940-c70f-4077-8b50-8038c00efbd4]
+2021-04-22 14:21:36.615 DEBUG 25584 --- [http-nio-8989-exec-5] org.hibernate.SQL                        : 
+    select
+        voiture0_.id as id1_3_0_,
+        voiture0_.date_update as date_upd2_3_0_,
+        voiture0_.deleted as deleted3_3_0_,
+        voiture0_.marque as marque4_3_0_,
+        voiture0_.matricule as matricul5_3_0_,
+        voiture0_.puissance as puissanc6_3_0_,
+        voiture0_.vitesse as vitesse7_3_0_ 
+    from
+        voiture voiture0_ 
+    where
+        voiture0_.id=?
+2021-04-22 14:21:36.616 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [c46eb940-c70f-4077-8b50-8038c00efbd4]
+2021-04-22 14:21:36.632 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_upd2_3_0_] : [DATE]) - [2021-04-22]
+2021-04-22 14:21:36.632 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([deleted3_3_0_] : [BOOLEAN]) - [false]
+2021-04-22 14:21:36.632 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([marque4_3_0_] : [VARCHAR]) - [RENAUL]
+2021-04-22 14:21:36.632 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([matricul5_3_0_] : [VARCHAR]) - [1515TAB]
+2021-04-22 14:21:36.632 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([puissanc6_3_0_] : [INTEGER]) - [125]
+2021-04-22 14:21:36.632 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vitesse7_3_0_] : [DOUBLE]) - [45.0]
+2021-04-22 14:21:36.636 DEBUG 25584 --- [http-nio-8989-exec-5] org.hibernate.SQL                        : 
+    select
+        utilisateu0_.id as id1_2_0_,
+        utilisateu0_.password as password2_2_0_,
+        utilisateu0_.role as role4_2_0_,
+        utilisateu0_.username as username3_2_0_ 
+    from
+        utilisateur utilisateu0_ 
+    where
+        utilisateu0_.id=?
+2021-04-22 14:21:36.637 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [10]
+2021-04-22 14:21:36.638 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password2_2_0_] : [VARCHAR]) - [V1234!]
+2021-04-22 14:21:36.639 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role4_2_0_] : [BIGINT]) - [9]
+2021-04-22 14:21:36.639 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([username3_2_0_] : [VARCHAR]) - [rasoanantenainav@gmail.com]
+2021-04-22 14:21:36.641 DEBUG 25584 --- [http-nio-8989-exec-5] org.hibernate.SQL                        : 
+    select
+        role0_.id as id1_1_0_,
+        role0_.role_name as role_nam2_1_0_ 
+    from
+        role role0_ 
+    where
+        role0_.id=?
+2021-04-22 14:21:36.642 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [9]
+2021-04-22 14:21:36.643 TRACE 25584 --- [http-nio-8989-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role_nam2_1_0_] : [VARCHAR]) - [Admin]
+2021-04-22 14:22:47.686  INFO 23876 --- [restartedMain] t.j.v.c.CommentaireApplication           : Starting CommentaireApplication using Java 11.0.2 on DESKTOP-CTDRE1E with PID 23876 (D:\_Projets\PROJETS\TestVoiture\target\classes started by Vero in D:\_Projets\PROJETS\TestVoiture)
+2021-04-22 14:22:47.698  INFO 23876 --- [restartedMain] t.j.v.c.CommentaireApplication           : No active profile set, falling back to default profiles: default
+2021-04-22 14:22:47.756  INFO 23876 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-22 14:22:47.757  INFO 23876 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-22 14:22:48.950  INFO 23876 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-22 14:22:49.059  INFO 23876 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 4 JPA repository interfaces.
+2021-04-22 14:22:49.523  INFO 23876 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@56022c71' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-22 14:22:49.537  INFO 23876 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-22 14:22:49.944  INFO 23876 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2021-04-22 14:22:49.956  INFO 23876 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-22 14:22:49.956  INFO 23876 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-22 14:22:50.135  INFO 23876 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-22 14:22:50.136  INFO 23876 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2378 ms
+2021-04-22 14:22:50.464  INFO 23876 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-22 14:22:50.533  INFO 23876 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-22 14:22:50.706  INFO 23876 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-22 14:22:50.859  INFO 23876 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-04-22 14:22:51.703  INFO 23876 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-22 14:22:51.879  INFO 23876 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-22 14:22:52.137  INFO 23876 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-22 14:22:52.152  INFO 23876 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-22 14:22:52.214  INFO 23876 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-22 14:22:53.010  WARN 23876 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-22 14:22:53.203  INFO 23876 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/voiture/list-voiture'] with []
+2021-04-22 14:22:53.281  INFO 23876 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30404943, org.springframework.security.web.context.SecurityContextPersistenceFilter@342811b6, org.springframework.security.web.header.HeaderWriterFilter@13407894, org.springframework.security.web.csrf.CsrfFilter@68c2f0ef, org.springframework.security.web.authentication.logout.LogoutFilter@134f8a49, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5c201244, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d7d4364, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69a4bed1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b22e3f0, org.springframework.security.web.session.SessionManagementFilter@2bb668a5, org.springframework.security.web.access.ExceptionTranslationFilter@39cd72d0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@192eb44f]
+2021-04-22 14:22:53.490  INFO 23876 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-22 14:22:53.879  INFO 23876 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2021-04-22 14:22:53.897  INFO 23876 --- [restartedMain] t.j.v.c.CommentaireApplication           : Started CommentaireApplication in 6.67 seconds (JVM running for 7.72)
+2021-04-22 14:22:53.991 DEBUG 23876 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        utilisateu0_.id as id1_2_,
+        utilisateu0_.password as password2_2_,
+        utilisateu0_.role as role4_2_,
+        utilisateu0_.username as username3_2_ 
+    from
+        utilisateur utilisateu0_
+2021-04-22 14:22:54.001 TRACE 23876 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_2_] : [BIGINT]) - [10]
+2021-04-22 14:22:54.008 TRACE 23876 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password2_2_] : [VARCHAR]) - [V1234!]
+2021-04-22 14:22:54.008 TRACE 23876 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role4_2_] : [BIGINT]) - [9]
+2021-04-22 14:22:54.008 TRACE 23876 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([username3_2_] : [VARCHAR]) - [rasoanantenainav@gmail.com]
+2021-04-22 14:22:54.045 DEBUG 23876 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        voiture0_.id as id1_3_,
+        voiture0_.date_update as date_upd2_3_,
+        voiture0_.deleted as deleted3_3_,
+        voiture0_.marque as marque4_3_,
+        voiture0_.matricule as matricul5_3_,
+        voiture0_.puissance as puissanc6_3_,
+        voiture0_.vitesse as vitesse7_3_ 
+    from
+        voiture voiture0_
+2021-04-22 14:22:54.047 TRACE 23876 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_3_] : [VARCHAR]) - [c46eb940-c70f-4077-8b50-8038c00efbd4]
+2021-04-22 14:22:54.054 TRACE 23876 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_upd2_3_] : [DATE]) - [2021-04-22]
+2021-04-22 14:22:54.055 TRACE 23876 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([deleted3_3_] : [BOOLEAN]) - [false]
+2021-04-22 14:22:54.055 TRACE 23876 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([marque4_3_] : [VARCHAR]) - [RENAUL]
+2021-04-22 14:22:54.056 TRACE 23876 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([matricul5_3_] : [VARCHAR]) - [1515TAB]
+2021-04-22 14:22:54.057 TRACE 23876 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([puissanc6_3_] : [INTEGER]) - [125]
+2021-04-22 14:22:54.058 TRACE 23876 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vitesse7_3_] : [DOUBLE]) - [45.0]
+2021-04-22 14:23:25.061  INFO 23876 --- [http-nio-8989-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-22 14:23:25.062  INFO 23876 --- [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-22 14:23:25.064  INFO 23876 --- [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-22 14:23:25.291  WARN 23876 --- [http-nio-8989-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [213] milliseconds.
+2021-04-22 14:23:34.073 DEBUG 23876 --- [http-nio-8989-exec-3] org.hibernate.SQL                        : 
+    select
+        voiture0_.id as id1_3_,
+        voiture0_.date_update as date_upd2_3_,
+        voiture0_.deleted as deleted3_3_,
+        voiture0_.marque as marque4_3_,
+        voiture0_.matricule as matricul5_3_,
+        voiture0_.puissance as puissanc6_3_,
+        voiture0_.vitesse as vitesse7_3_ 
+    from
+        voiture voiture0_
+2021-04-22 14:23:34.074 TRACE 23876 --- [http-nio-8989-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_3_] : [VARCHAR]) - [c46eb940-c70f-4077-8b50-8038c00efbd4]
+2021-04-22 14:23:34.075 TRACE 23876 --- [http-nio-8989-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_upd2_3_] : [DATE]) - [2021-04-22]
+2021-04-22 14:23:34.075 TRACE 23876 --- [http-nio-8989-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([deleted3_3_] : [BOOLEAN]) - [false]
+2021-04-22 14:23:34.075 TRACE 23876 --- [http-nio-8989-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([marque4_3_] : [VARCHAR]) - [RENAUL]
+2021-04-22 14:23:34.075 TRACE 23876 --- [http-nio-8989-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([matricul5_3_] : [VARCHAR]) - [1515TAB]
+2021-04-22 14:23:34.075 TRACE 23876 --- [http-nio-8989-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([puissanc6_3_] : [INTEGER]) - [125]
+2021-04-22 14:23:34.076 TRACE 23876 --- [http-nio-8989-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vitesse7_3_] : [DOUBLE]) - [45.0]
+2021-04-22 14:31:25.131  INFO 28420 --- [restartedMain] t.j.v.c.CommentaireApplication           : Starting CommentaireApplication using Java 11.0.2 on DESKTOP-CTDRE1E with PID 28420 (D:\_Projets\PROJETS\TestVoiture\target\classes started by Vero in D:\_Projets\PROJETS\TestVoiture)
+2021-04-22 14:31:25.133  INFO 28420 --- [restartedMain] t.j.v.c.CommentaireApplication           : No active profile set, falling back to default profiles: default
+2021-04-22 14:31:25.173  INFO 28420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-22 14:31:25.173  INFO 28420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-22 14:31:25.682  INFO 28420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-22 14:31:25.738  INFO 28420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+2021-04-22 14:31:25.978  INFO 28420 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@73d33c1b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-22 14:31:25.987  INFO 28420 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-22 14:31:26.222  INFO 28420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8989 (http)
+2021-04-22 14:31:26.229  INFO 28420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-22 14:31:26.229  INFO 28420 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-22 14:31:26.315  INFO 28420 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-22 14:31:26.315  INFO 28420 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1141 ms
+2021-04-22 14:31:26.482  INFO 28420 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-22 14:31:26.517  INFO 28420 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-22 14:31:26.594  INFO 28420 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-22 14:31:26.660  INFO 28420 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-04-22 14:31:27.072  INFO 28420 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-22 14:31:27.159  INFO 28420 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-22 14:31:27.265  INFO 28420 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-22 14:31:27.272  INFO 28420 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-22 14:31:27.293  INFO 28420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-22 14:31:27.729  WARN 28420 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-22 14:31:27.826  INFO 28420 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/voiture/list-voiture'] with []
+2021-04-22 14:31:27.826  INFO 28420 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/commentaire/**'] with []
+2021-04-22 14:31:27.866  INFO 28420 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46335d9f, org.springframework.security.web.context.SecurityContextPersistenceFilter@491f67d5, org.springframework.security.web.header.HeaderWriterFilter@470c0cce, org.springframework.security.web.csrf.CsrfFilter@7bbefe1b, org.springframework.security.web.authentication.logout.LogoutFilter@60afdfbc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4644e780, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1faec766, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@675a4152, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1502246c, org.springframework.security.web.session.SessionManagementFilter@65510c70, org.springframework.security.web.access.ExceptionTranslationFilter@47791252, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5adb4582]
+2021-04-22 14:31:27.983  INFO 28420 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-22 14:31:28.191  INFO 28420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8989 (http) with context path ''
+2021-04-22 14:31:28.201  INFO 28420 --- [restartedMain] t.j.v.c.CommentaireApplication           : Started CommentaireApplication in 3.505 seconds (JVM running for 4.629)
+2021-04-22 14:31:28.272 DEBUG 28420 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        utilisateu0_.id as id1_2_,
+        utilisateu0_.password as password2_2_,
+        utilisateu0_.role as role4_2_,
+        utilisateu0_.username as username3_2_ 
+    from
+        utilisateur utilisateu0_
+2021-04-22 14:31:28.278 TRACE 28420 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_2_] : [BIGINT]) - [10]
+2021-04-22 14:31:28.283 TRACE 28420 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password2_2_] : [VARCHAR]) - [V1234!]
+2021-04-22 14:31:28.284 TRACE 28420 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role4_2_] : [BIGINT]) - [9]
+2021-04-22 14:31:28.284 TRACE 28420 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([username3_2_] : [VARCHAR]) - [rasoanantenainav@gmail.com]
+2021-04-22 14:31:28.306 DEBUG 28420 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        voiture0_.id as id1_3_,
+        voiture0_.date_update as date_upd2_3_,
+        voiture0_.deleted as deleted3_3_,
+        voiture0_.marque as marque4_3_,
+        voiture0_.matricule as matricul5_3_,
+        voiture0_.puissance as puissanc6_3_,
+        voiture0_.vitesse as vitesse7_3_ 
+    from
+        voiture voiture0_
+2021-04-22 14:31:28.307 TRACE 28420 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_3_] : [VARCHAR]) - [c46eb940-c70f-4077-8b50-8038c00efbd4]
+2021-04-22 14:31:28.311 TRACE 28420 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_upd2_3_] : [DATE]) - [2021-04-22]
+2021-04-22 14:31:28.312 TRACE 28420 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([deleted3_3_] : [BOOLEAN]) - [false]
+2021-04-22 14:31:28.313 TRACE 28420 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([marque4_3_] : [VARCHAR]) - [RENAUL]
+2021-04-22 14:31:28.313 TRACE 28420 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([matricul5_3_] : [VARCHAR]) - [1515TAB]
+2021-04-22 14:31:28.313 TRACE 28420 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([puissanc6_3_] : [INTEGER]) - [125]
+2021-04-22 14:31:28.314 TRACE 28420 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([vitesse7_3_] : [DOUBLE]) - [45.0]
+2021-04-22 14:31:52.301  INFO 28420 --- [http-nio-8989-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-22 14:31:52.303  INFO 28420 --- [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-22 14:31:52.304  INFO 28420 --- [http-nio-8989-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-22 14:31:52.365  WARN 28420 --- [http-nio-8989-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=--------------------------807658202122206500054593;charset=UTF-8' not supported]
+2021-04-22 14:31:52.640  WARN 28420 --- [http-nio-8989-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [268] milliseconds.
