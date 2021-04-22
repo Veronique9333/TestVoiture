@@ -9,7 +9,7 @@ import test.java.voiture.commentaire.models.Utilisateur;
 import java.util.Optional;
 
 @Repository
-public interface UtilisateurRepository extends JpaRepository<Utilisateur, String> {
+public interface UtilisateurRepository extends JpaRepository<Utilisateur, Long> {
 
     @Query("select u from Utilisateur u where u.username =:username")
     Optional<Utilisateur> findByUsername(@Param ("username") String username);

@@ -10,6 +10,7 @@ import test.java.voiture.commentaire.repositories.CommentaireRepository;
 import test.java.voiture.commentaire.services.CommentaireService;
 import test.java.voiture.commentaire.services.UtilisateurService;
 import test.java.voiture.commentaire.services.VoitureService;
+import test.java.voiture.commentaire.utils.AppNotFoundException;
 
 import java.util.List;
 
@@ -49,19 +50,11 @@ public class CommentaireController {
 
     //save commentaire
     @PostMapping(value = "save")
-    public ResponseEntity<Commentaire> createCommentaire(@RequestBody CommentaireDto commentaireDto) {
-        log.info ("coms dto {}", commentaireDto);
-        try {
-            Commentaire commentaire = new Commentaire ();
-            commentaire.setDescription (commentaireDto.getDescription ());
-            commentaire.setVoiture (voitureService.fetchOneVoiture (commentaireDto.getVoitureId ()));
-            commentaire.setUtilisateur (utilisateurService.fecthOneUser(commentaireDto.getUtilisateurId ()));
-
-            log.info ("com {}", commentaire);
-
-            return new ResponseEntity<> (this.commentaireService.save (commentaire), HttpStatus.CREATED);
-        }catch (Exception e){
-            return new ResponseEntity<> (null, HttpStatus.EXPECTATION_FAILED);
-        }
+    public ResponseEntity<Commentaire> createCommentaire(@RequestBody CommentaireDto commentaireDto) throws AppNotFoundException {
+        Commentaire commentaire = new Commentaire ();
+        commentaire.setDescription (commentaireDto.getDescription ());
+        commentaire.setVoiture (voitureService.fetchOneVoiture (commentaireDto.getVoitureId ()));
+        commentaire.setUtilisateur (utilisateurService.fecthOneUser(commentaireDto.getUtilisateurId ()));
+        return new ResponseEntity<> (this.commentaireService.save (commentaire), HttpStatus.CREATED);
     }
 }

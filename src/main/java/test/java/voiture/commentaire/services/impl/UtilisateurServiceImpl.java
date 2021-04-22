@@ -44,7 +44,7 @@ public class UtilisateurServiceImpl implements UtilisateurService {
 
     @Override
     public Utilisateur fecthOneUser(Long utilisateurId) throws AppNotFoundException {
-        return utilisateurRepository.findById (String.valueOf (utilisateurId))
+        return utilisateurRepository.findById (utilisateurId)
                 .orElseThrow (() -> new AppNotFoundException ("Utilisateur non trouvé"));
     }
 

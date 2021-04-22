@@ -40,7 +40,6 @@ public class VoitureController {
     @PostMapping(value = "save")
     @CrossOrigin(origins = "*")
     public ResponseEntity<Voiture> createVoiture(@RequestBody Voiture voiture){
-        log.info ("voiture {}", voiture);
         Voiture newVoiture = this.voitureService.save (voiture);
         return ResponseEntity.ok (newVoiture);
     }
