@@ -63,6 +63,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(WebSecurity web) {
         web.ignoring()
-                .antMatchers("/api/voiture/list-voiture", "/api/commentaire/**");
+                .antMatchers("/api/voiture/list-voiture");
     }
 }
